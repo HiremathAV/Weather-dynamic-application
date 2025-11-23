@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather • Real Backgrounds</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <div class="left">
+      <div class="top">
+        <div class="temp-wrap">
+          <div class="temp" aria-live="polite">-- °C</div>
+          <div class="condition">
+            <img class="weather_icon" src="" alt="weather icon" />
+            <p></p>
+          </div>
+        </div>
+
+        <div class="time_location">
+          <p class="location">--</p>
+          <span class="datetime">--</span>
+        </div>
+      </div>
+
+      <form class="search" autocomplete="off">
+        <input class="search_area" type="search" placeholder="search for a location" />
+        <button class="search_btn" type="submit">Search</button>
+      </form>
+
+      <div class="meta">
+        <small class="last-updated"></small>
+      </div>
+    </div>
+
+    <div class="right">
+      <!-- Decorative / optional image (you uploaded screenshot). Local path included below. -->
+      <!-- Example: <img src="/mnt/data/Screenshot 2025-11-23 160718.png" alt="screenshot"> -->
+      <div class="credits">Backgrounds change by weather • Powered by WeatherAPI</div>
+    </div>
+  </main>
+
+  <template id="errorTpl">
+    <div class="error">Could not find location. Try another name.</div>
+  </template>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
